@@ -1,0 +1,424 @@
+/* ===============================
+   TOKI'S MUSIC
+   =============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b0f;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+
+/* ===============================
+   APP
+   =============================== */
+
+.app {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 25px 20px 120px;
+}
+
+
+/* ===============================
+   HEADER
+   =============================== */
+
+.header {
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header p {
+    color: #999;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+/* ===============================
+   SEARCH
+   =============================== */
+
+.search-box {
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #292933;
+    border-radius: 14px;
+    outline: none;
+    background: #17171e;
+    color: white;
+}
+
+.search-box input::placeholder {
+    color: #777;
+}
+
+.search-box input:focus {
+    border-color: #777;
+}
+
+
+/* ===============================
+   NOW PLAYING
+   =============================== */
+
+.now-playing {
+    background: #15151c;
+    border: 1px solid #25252e;
+    border-radius: 24px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* ===============================
+   COVER
+   =============================== */
+
+.cover-container {
+    width: min(75vw, 330px);
+    aspect-ratio: 1 / 1;
+    margin: 0 auto 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #22222b;
+}
+
+.cover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ===============================
+   SONG INFO
+   =============================== */
+
+.song-info h2 {
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.song-info p {
+    color: #999;
+    font-size: 14px;
+}
+
+
+/* ===============================
+   PROGRESS
+   =============================== */
+
+.progress-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.progress-area span {
+    color: #888;
+    font-size: 12px;
+    min-width: 35px;
+}
+
+.progress-area span:last-child {
+    text-align: right;
+}
+
+.progress-area input[type="range"] {
+    flex: 1;
+    min-width: 0;
+}
+
+input[type="range"] {
+    accent-color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* ===============================
+   CONTROLS
+   =============================== */
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.controls button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #24242d;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.controls button:hover {
+    background: #33333e;
+}
+
+.controls #playBtn {
+    width: 58px;
+    height: 58px;
+    background: white;
+    color: #111;
+    font-size: 22px;
+}
+
+.controls button.active {
+    background: #ffffff;
+    color: #111;
+}
+
+
+/* ===============================
+   VOLUME
+   =============================== */
+
+.volume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.volume input {
+    width: 130px;
+}
+
+
+/* ===============================
+   LIBRARY
+   =============================== */
+
+.library {
+    margin-top: 10px;
+}
+
+.section-title {
+    margin-bottom: 15px;
+}
+
+.section-title h2 {
+    font-size: 20px;
+}
+
+
+/* ===============================
+   SONG LIST
+   =============================== */
+
+.song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.song-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 14px;
+    background: #15151c;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+.song-item:hover {
+    background: #20202a;
+}
+
+.song-item.playing {
+    border-color: #555;
+}
+
+.song-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #25252d;
+}
+
+.song-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.song-item strong {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.song-item span {
+    color: #888;
+    font-size: 13px;
+}
+
+
+/* ===============================
+   MOBILE
+   =============================== */
+
+@media (max-width: 600px) {
+
+    .app {
+        padding: 20px 14px 100px;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .now-playing {
+        padding: 20px 15px;
+        border-radius: 20px;
+    }
+
+    .cover-container {
+        width: min(80vw, 300px);
+    }
+
+    .controls {
+        gap: 8px;
+    }
+
+    .controls button {
+        width: 42px;
+        height: 42px;
+    }
+
+    .controls #playBtn {
+        width: 55px;
+        height: 55px;
+    }
+
+}
+
+
+/* ===============================
+   MINI PLAYER
+   =============================== */
+
+.mini-player {
+    position: fixed;
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+
+    width: min(92%, 700px);
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px 12px;
+
+    background: rgba(25, 25, 32, 0.96);
+    border: 1px solid #35353f;
+    border-radius: 16px;
+
+    z-index: 1000;
+}
+
+.mini-player img {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+}
+
+.mini-info {
+    flex: 1;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mini-info strong {
+    font-size: 14px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mini-info span {
+    color: #888;
+    font-size: 12px;
+}
+
+.mini-player button {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #24242d;
+    color: white;
+
+    cursor: pointer;
+}
+
+.mini-player button:hover {
+    background: #35353f;
+}
+
+@media (max-width: 500px) {
+
+    .mini-player {
+        bottom: 8px;
+        width: 94%;
+    }
+
+    .mini-player button {
+        width: 36px;
+        height: 36px;
+    }
+
+}
