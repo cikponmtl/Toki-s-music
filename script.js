@@ -45,84 +45,84 @@ const songs = [
     {
         title: "Chloe",
         artist: "Toki",
-        file: "music/Chloee.mp3",
-        cover: "covers/suka.png"
+        file: "Chloee.mp3",
+        cover: "suka.png"
     },
 
     {
         title: "Jatuh cinta",
         artist: "Asuma",
-        file: "music/jc.mp3",
-        cover: "covers/춥다 (1).jpg"
+        file: "jc.mp3",
+        cover: "춥다 (1).jpg"
     },
     
     {
         title: "Dj Pudar",
         artist: "Youkai",
-        file: "music/dj pudar.mp3",
-        cover: "covers/Han.jpg"
+        file: "dj pudar.mp3",
+        cover: "Han.jpg"
     },
     
     {
         title: "Mahligai Cinta",
         artist: "Saya",
-        file: "music/mahligai cinta.mp3",
-        cover: "covers/Gyj.jpg"
+        file: "mahligai cinta.mp3",
+        cover: "Gyj.jpg"
     },
     
     {
         title: "JC x MH",
         artist: "Anta lips",
-        file: "music/jc x Mh.mp3",
-        cover: "covers/so hee.jpg"
+        file: "jc x Mh.mp3",
+        cover: "so hee.jpg"
     },
     
     {
         title: "Comak Caloo",
         artist: "4w",
-        file: "music/comak calo.mp3",
-        cover: "covers/default.jpg"
+        file: "comak calo.mp3",
+        cover: "default.jpg"
     },
     
     {
         title: "?",
         artist: "786",
-        file: "music/ada apa dengan cinta.mp3",
-        cover: "covers/MBG.jpg"
+        file: "ada apa dengan cinta.mp3",
+        cover: "MBG.jpg"
     },
     
     {
         title: "Tentang Perasaanku",
         artist: "Blue heart",
-        file: "music/tentang persaanku.mp3",
-        cover: "covers/mbg.jpg"
+        file: "tentang persaanku.mp3",
+        cover: "mbg.jpg"
     },
     
     {
         title: "Jatuh cinta x My Heart",
         artist: "Dj Garam",
-        file: "music/jc x my heart.mp3",
-        cover: "covers/default.jpg"
+        file: "jc x my heart.mp3",
+        cover: "default.jpg"
     },
     {
         title: "Hidup romanc",
         artist: "Kakeru",
-        file: "music/Peak life.mp3",
-        cover: "covers/Yo.jpg"
+        file: "Peak life.mp3",
+        cover: "Yo.jpg"
     },
     
     {
         title: "MIEKU",
         artist: "Toki",
-        file: "music/mieku.mp3",
-        cover: "covers/default.jpg"
+        file: "mieku.mp3",
+        cover: "default.jpg"
     },
     
     {
         title: "kicau mania",
         artist: "Suka",
-        file: "music/kicau mania.mp3",
-        cover: "covers/default.jpg"
+        file: "kicau mania.mp3",
+        cover: "default.jpg"
     }
     
     
