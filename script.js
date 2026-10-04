@@ -94,7 +94,7 @@ const songs = [
     {
         title: "Tentang Perasaanku",
         artist: "Blue heart",
-        file: "tentang perasaan saya.mp3",
+        file: "tentang perasaan ku.mp3",
         cover: "mbg.jpg"
     },
     
