@@ -55,6 +55,13 @@ const songs = [
         file: "jc.mp3",
         cover: "춥다 (1).jpg"
     },
+
+    {
+        title: "cinta",
+        artist: "Yuu",
+        file: "cinta.mp3",
+        cover: ".jpg"
+    },
     
     {
         title: "Dj Pudar",
