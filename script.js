@@ -60,7 +60,7 @@ const songs = [
         title: "cinta",
         artist: "Yuu",
         file: "cinta.mp3",
-        cover: ".jpg"
+        cover: "default.jpg"
     },
     
     {
